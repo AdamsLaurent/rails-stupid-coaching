@@ -1,8 +1,14 @@
-<h1>Stupide Coaching</h1>
+<h1>Stupid Coaching</h1>
 
-<p><%= params[:question] %></p>
-
-"<%= @answer %>"
+<p>
+  <%= params[:question] %>
+  <br>
+  <em> -You</em>
+</p>
+<%# class="border-start border-5"  %>
+<p class="bg-warning p-2 text-dark bg-opacity-25">
+<strong><%= @answer %></strong>
 <br>
-<br>
+<em> -Your coach</em>
+</p>
  <%= link_to "Ask a new question", :back %>
